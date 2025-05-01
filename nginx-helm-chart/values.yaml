@@ -1,0 +1,14 @@
+namespace: dev  # Change to 'uat' as needed
+
+replicaCount: 1
+
+image:
+  repository: nginx
+  tag: "1.21.0"
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 80
+
+resources: {}
