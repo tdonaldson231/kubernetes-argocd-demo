@@ -1,6 +1,6 @@
 namespace: dev  # Change to 'uat' as needed
 
-replicaCount: 1
+replicaCount: 3
 
 image:
   repository: nginx
