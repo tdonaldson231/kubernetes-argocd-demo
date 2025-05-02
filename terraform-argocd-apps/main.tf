@@ -42,7 +42,7 @@ resource "argocd_application" "helm" {
     source {
       repo_url        = "https://github.com/tdonaldson231/kubernetes-argocd-demo.git"
       path            = "nginx-helm-chart"
-      target_revision = "helm-charts-nginx"
+      target_revision = var.branch_name
 
       helm {
         release_name = "testing"
