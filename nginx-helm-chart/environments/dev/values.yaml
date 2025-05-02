@@ -1,6 +1,6 @@
-namespace: dev  # Change to 'uat' as needed
+namespace: dev
 
-replicaCount: 3
+replicaCount: 2
 strategy:
     type: RollingUpdate
     rollingUpdate:
