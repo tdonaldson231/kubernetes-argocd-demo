@@ -11,6 +11,7 @@ terraform.rc
 
 # Ignore .terraform working directory
 .terraform/
+.terraform.state.d/
 
 # Ignore Terraform plan files
 *.tfplan
