@@ -8,7 +8,6 @@ variable "argocd_server_addr" {
 variable "argocd_username" {
   description = "ArgoCD username"
   type = string
-  default = "admin"  
 }
 
 variable "argocd_password" {
@@ -16,7 +15,7 @@ variable "argocd_password" {
   type = string
 }
 
-# variable "kubes_environment" {
-#   description = "Kubernetes cluster environment"
-#   type        = string
-# }
+variable "branch_name" {
+  description = "ArgoCD target_revision (branch)"
+  default = "main" ##helm-charts-nginx  
+}
