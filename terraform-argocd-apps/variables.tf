@@ -2,12 +2,13 @@
 variable "argocd_server_addr" {
   description = "ArgoCD server:port"
   type = string
-  default = "localhost:8080"
+  default = "localhost:9090"
 }
 
 variable "argocd_username" {
   description = "ArgoCD username"
   type = string
+  default = "admin"
 }
 
 variable "argocd_password" {

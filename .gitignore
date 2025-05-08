@@ -1,6 +1,7 @@
 # Ignore Terraform state files
 *.tfstate
 *.tfstate.backup
+.terraform.lock.hcl
 
 # Ignore crash logs
 crash.log
@@ -9,9 +10,9 @@ crash.log
 .terraformrc
 terraform.rc
 
-# Ignore .terraform working directory
+# Ignore entire Terraform directories
 .terraform/
-.terraform.state.d/
+terraform.tfstate.d/
 
 # Ignore Terraform plan files
 *.tfplan
